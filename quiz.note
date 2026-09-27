@@ -5,7 +5,17 @@ cor de contraste: #008080;
 cor de acento: #D2B48C;
 cor neutra: #333333;
 =========CLASSES=============
-
+-container-quiz
+-contador-perguntas
+-texto-pergunta
+-lista-opcoes
+-botao-opcao
+-certo
+-errado
+-botao-proximo
+-tela-resultado
+-pontuacao-resultado
+-botao-reiniciar
 ========TRANSIÇÕES===========
 
 =============================
