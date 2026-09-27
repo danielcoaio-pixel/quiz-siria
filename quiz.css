@@ -1,0 +1,113 @@
+:root {
+  --cor-principal: #C06040;
+  --cor-secundaria: #1A3C60;
+  --cor-de-contraste: #008080;
+  --cor-de-acento: #D2B48C;
+  --cor-neutra: #333333;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background-image: url('https://www.arabamerica.com/wp-content/uploads/2023/08/D62E868E-44B2-4895-A398-1CD6B16BD77E.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.container-quiz {
+  border: 5px solid var(--cor-secundaria);
+  border-radius: 12px;
+  padding: 15px;
+  width: 90%;
+  max-width: 700px;
+}
+
+.contador-perguntas {
+  font-size: 34px;
+  color: var(--cor-neutra);
+  margin-bottom: 8px;
+}
+
+.texto-pergunta {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 24px;
+  text-align: center;
+  color: var(--cor-secundaria);
+}
+
+.lista-opcoes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.botao-opcao {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 16px;
+  margin-bottom: 8px;
+  border: 1px solid var(--cor-secundaria);
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--cor-neutra);
+}
+
+.botao-opcao:hover {
+  background: var(--cor-de-acento);
+}
+
+.botao-opcao.certo {
+  background: var(--cor-de-contraste);
+  border-color: var(--cor-de-contraste);
+  color: #fff;
+}
+
+.botao-opcao.errado {
+  background: var(--cor-principal);
+  border-color: var(--cor-principal);
+  color: #fff;
+}
+
+.botao-proximo {
+  margin-top: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: var(--cor-secundaria);
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.tela-resultado {
+  text-align: center;
+  display: none;
+}
+
+.pontuacao-resultado {
+  font-size: 32px;
+  margin: 16px 0;
+  color: var(--cor-principal);
+}
+
+.botao-reiniciar {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: var(--cor-secundaria);
+  color: #fff;
+  cursor: pointer;
+}
