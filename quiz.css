@@ -11,6 +11,7 @@
 * { box-sizing: border-box; }
 
 body {
+  font-family: "El Messiri", sans-serif;
   background-image: url('https://www.arabamerica.com/wp-content/uploads/2023/08/D62E868E-44B2-4895-A398-1CD6B16BD77E.webp');
   background-size: cover;
   background-position: center;
@@ -89,7 +90,6 @@ body {
   background: var(--cor-secundaria);
   color: #fff;
   cursor: pointer;
-  display: none;
 }
 
 .tela-resultado {
@@ -111,3 +111,5 @@ body {
   color: #fff;
   cursor: pointer;
 }
+
+

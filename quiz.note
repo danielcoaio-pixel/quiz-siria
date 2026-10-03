@@ -6,7 +6,6 @@ cor de acento: #D2B48C;
 cor neutra: #333333;
 =========CLASSES=============
 -container-quiz
--contador-perguntas
 -texto-pergunta
 -lista-opcoes
 -botao-opcao
@@ -16,6 +15,7 @@ cor neutra: #333333;
 -tela-resultado
 -pontuacao-resultado
 -botao-reiniciar
+-contador-perguntas
 ========TRANSIÇÕES===========
 
 =============================
