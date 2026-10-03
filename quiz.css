@@ -113,3 +113,74 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Retira as bordas padrão do fieldset e esconde as perguntas */
+.bloco-pergunta {
+    display: none; 
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Quando a classe ativo entra em cena, a animação acontece */
+.bloco-pergunta.ativo {
+    display: block;
+    animation: fadeInSlide 0.4s ease-out forwards;
+}
+
+/* Animação de transição: surge do transparente para o opaco, deslizando 20px */
+@keyframes fadeInSlide {
+    from { 
+        opacity: 0; 
+        transform: translateX(20px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateX(0); 
+    }
+}
+
+.botao-opcao {
+    margin-bottom: 12px;
+}
+
+.botao-proximo {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}

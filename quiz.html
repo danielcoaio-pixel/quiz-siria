@@ -4,43 +4,223 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz da Síria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
     <div class="container-quiz">
-        <div class="-lista-opcoes">
-            <legend class="texto-pergunta">Pergunta 1</legend>
-            <div class="botao-opcao">
-                    <label>
-                        <input type="radio" name="resposta" value="errada"> resposta 1
-                    </label>
-            </div>
-            <div class="botao-opcao">
-                    <label>
-                        <input type="radio" name="resposta" value="errada"> resposta 2
-                    </label>
-                </fieldset>
-            </div>
-            <div class="botao-opcao">
-                <label>
-                    <input type="radio" name="resposta" value="certa"> resposta 3
-                    </label>
-                </div>
-            <div class="botao-opcao">
-                <label>
-                    <input type="radio" name="resposta" value="errada"> resposta 4
+        
+        <!-- PERGUNTA 1 -->
+        <fieldset class="bloco-pergunta ativo" id="pergunta-1">
+            <div class="contador-perguntas">1 / 10</div>
+            <legend class="texto-pergunta">Qual é a capital da Síria?</legend>
+            <div class="lista-opcoes">
+                <label class="botao-opcao">
+                    <input type="radio" name="q1" value="errada"> Beirute
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q1" value="errada"> Amã
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q1" value="certa"> Damasco
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q1" value="errada"> Bagdá
                 </label>
             </div>
-            <div class="botao-proximo">
-            <label>
-                <button>enviar senha do cartão de crédito</button>
-            </label>
+            <button class="botao-proximo" onclick="verificarResposta(1, 2)">Responder</button>
+        </fieldset>
+
+        <!-- PERGUNTA 2 -->
+        <fieldset class="bloco-pergunta" id="pergunta-2">
+            <div class="contador-perguntas">2 / 10</div>
+            <legend class="texto-pergunta">Qual importante rio cruza o território sírio?</legend>
+            <div class="lista-opcoes">
+                <label class="botao-opcao">
+                    <input type="radio" name="q2" value="errada"> Nilo
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q2" value="certa"> Eufrates
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q2" value="errada"> Tigre
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q2" value="errada"> Jordão
+                </label>
             </div>
+            <button class="botao-proximo" onclick="verificarResposta(2, 3)">Responder</button>
+        </fieldset>
+
+        <!-- PERGUNTA 3 -->
+        <fieldset class="bloco-pergunta" id="pergunta-3">
+            <div class="contador-perguntas">3 / 10</div>
+            <legend class="texto-pergunta">A Síria possui costa para qual mar?</legend>
+            <div class="lista-opcoes">
+                <label class="botao-opcao">
+                    <input type="radio" name="q3" value="certa"> Mar Mediterrâneo
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q3" value="errada"> Mar Vermelho
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q3" value="errada"> Mar Negro
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q3" value="errada"> Mar Cáspio
+                </label>
+            </div>
+            <button class="botao-proximo" onclick="verificarResposta(3, 4)">Responder</button>
+        </fieldset>
+
+        <!-- PERGUNTA 4 -->
+        <fieldset class="bloco-pergunta" id="pergunta-4">
+            <div class="contador-perguntas">4 / 10</div>
+            <legend class="texto-pergunta">Qual antiga cidade na Síria é frequentemente chamada de "Pérola do Deserto"?</legend>
+            <div class="lista-opcoes">
+                <label class="botao-opcao">
+                    <input type="radio" name="q4" value="errada"> Alepo
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q4" value="certa"> Palmira
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q4" value="errada"> Homs
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q4" value="errada"> Latakia
+                </label>
+            </div>
+            <button class="botao-proximo" onclick="verificarResposta(4, 5)">Responder</button>
+        </fieldset>
+
+        <!-- PERGUNTA 5 -->
+        <fieldset class="bloco-pergunta" id="pergunta-5">
+            <div class="contador-perguntas">5 / 10</div>
+            <legend class="texto-pergunta">Qual é o idioma oficial da Síria?</legend>
+            <div class="lista-opcoes">
+                <label class="botao-opcao">
+                    <input type="radio" name="q5" value="errada"> Curdo
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q5" value="errada"> Turco
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q5" value="certa"> Árabe
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q5" value="errada"> Persa
+                </label>
+            </div>
+            <button class="botao-proximo" onclick="verificarResposta(5, 6)">Responder</button>
+        </fieldset>
+
+        <!-- PERGUNTA 6 -->
+        <fieldset class="bloco-pergunta" id="pergunta-6">
+            <div class="contador-perguntas">6 / 10</div>
+            <legend class="texto-pergunta">Qual destes países NÃO faz fronteira terrestre com a Síria?</legend>
+            <div class="lista-opcoes">
+                <label class="botao-opcao">
+                    <input type="radio" name="q6" value="errada"> Líbano
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q6" value="errada"> Turquia
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q6" value="certa"> Irã
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q6" value="errada"> Iraque
+                </label>
+            </div>
+            <button class="botao-proximo" onclick="verificarResposta(6, 7)">Responder</button>
+        </fieldset>
+
+        <!-- PERGUNTA 7 -->
+        <fieldset class="bloco-pergunta" id="pergunta-7">
+            <div class="contador-perguntas">7 / 10</div>
+            <legend class="texto-pergunta">Qual é a moeda oficial utilizada na Síria?</legend>
+            <div class="lista-opcoes">
+                <label class="botao-opcao">
+                    <input type="radio" name="q7" value="errada"> Dinar sírio
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q7" value="certa"> Lira síria
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q7" value="errada"> Riyal sírio
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q7" value="errada"> Dirham sírio
+                </label>
+            </div>
+            <button class="botao-proximo" onclick="verificarResposta(7, 8)">Responder</button>
+        </fieldset>
+
+        <!-- PERGUNTA 8 -->
+        <fieldset class="bloco-pergunta" id="pergunta-8">
+            <div class="contador-perguntas">8 / 10</div>
+            <legend class="texto-pergunta">Qual cidade síria é famosa historicamente pela produção de um tipo específico de sabão em barra tradicional?</legend>
+            <div class="lista-opcoes">
+                <label class="botao-opcao">
+                    <input type="radio" name="q8" value="certa"> Alepo
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q8" value="errada"> Tartus
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q8" value="errada"> Hama
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q8" value="errada"> Idlib
+                </label>
+            </div>
+            <button class="botao-proximo" onclick="verificarResposta(8, 9)">Responder</button>
+        </fieldset>
+
+        <!-- PERGUNTA 9 (Verdadeiro ou Falso) -->
+        <fieldset class="bloco-pergunta" id="pergunta-9">
+            <div class="contador-perguntas">9 / 10</div>
+            <legend class="texto-pergunta">A Síria conquistou sua independência total do Mandato Francês no ano de 1946.</legend>
+            <div class="lista-opcoes">
+                <label class="botao-opcao">
+                    <input type="radio" name="q9" value="certa"> Verdadeiro
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q9" value="errada"> Falso
+                </label>
+            </div>
+            <button class="botao-proximo" onclick="verificarResposta(9, 10)">Responder</button>
+        </fieldset>
+
+        <!-- PERGUNTA 10 (Verdadeiro ou Falso) -->
+        <fieldset class="bloco-pergunta" id="pergunta-10">
+            <div class="contador-perguntas">10 / 10</div>
+            <legend class="texto-pergunta">Grande parte do território da Síria é coberto pelo Deserto do Saara.</legend>
+            <div class="lista-opcoes">
+                <label class="botao-opcao">
+                    <input type="radio" name="q10" value="errada"> Verdadeiro
+                </label>
+                <label class="botao-opcao">
+                    <input type="radio" name="q10" value="certa"> Falso
+                </label>
+            </div>
+            <!-- O id "resultado" indica que é a última pergunta -->
+            <button class="botao-proximo" onclick="verificarResposta(10, 'resultado')">Responder</button>
+        </fieldset>
+
+        <!-- TELA DE RESULTADOS -->
+        <div class="tela-resultado bloco-pergunta" id="tela-resultado">
+            <div class="texto-pergunta">Fim do Quiz!</div>
+            <p>Você completou todas as perguntas.</p>
+            <div class="pontuacao-resultado">Acertos: <strong id="acertos">0</strong> de 10</div>
+            <button class="botao-reiniciar" onclick="reiniciarQuiz()">Tentar Novamente</button>
         </div>
+
     </div>
-        <script src="quiz.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="quiz.js"></script>
 </body>
 </html>
